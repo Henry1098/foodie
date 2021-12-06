@@ -1,0 +1,25 @@
+{
+  "name": "foodie",
+  "version": "1.0.0",
+  "description": "Un réseau social pour amateur de nourriture et chefs.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "12.18.1"
+  },
+  "scripts": {
+    "start-client": "cd frontend && npm start",
+    "start-server": "cd server && npm start",
+    "start": "concurrently \"npm run start-server\" \"npm run start-client\"",
+    "init-project": "concurrently \"cd frontend && npm install\" \"cd server && npm install\""
+  },
+  "keywords": [],
+  "author": "Henry Nzinga <henrynzinga@yahoo.fr>",
+  "license": "",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
